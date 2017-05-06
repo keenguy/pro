@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>function of c++ | YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">c++ index</a></p>
+<h2>Basics</h2>
+<ul>
+<li><a href="./building-Process-of-Cpp.html">Building Process of C++</a></li>
+<li class="selected"><a href="./functions.html">Functions</a></li>
+<li><a href="./initialization.html">Initialization</a></li>
+</ul>
+<h2>Classes</h2>
+<h2>Templastes</h2>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h2>Overloading</h2>
+<ol>
+<li>type of parameters ( conversion )</li>
+<li>number of parateters</li>
+<li>const keyword</li>
+</ol>
+<ul>
+<li>C++ allows member methods to be overloaded on the basis of const type. Overloading on the basis of const type can be useful when a function return reference or pointer.</li>
+<li>C++ allows functions to be overloaded on the basis of const-ness of parameters only if the const parameter is a reference or a pointer.</li>
+</ul>
+<h2>Argument Passing</h2>
+<h3>Reference Arguments</h3>
+<h3>Array Arguments</h3>
+<h3>List Arguments</h3>
+<h3>Unspecified number of Arguments</h3>
+<h3>Default Arguments</h3>
+<p>A general function often needs more arguments than are necessary to handle simple cases. In particular, functions that construct objects (&#xA7;16.2.5) often provide several options for flexibility. Consider the <strong>complex</strong> class:</p>
+<pre class="editor-colors lang-c++"><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="storage type cpp"><span>class</span></span><span>&#xA0;</span><span class="entity name type cpp"><span>complex</span></span><span>&#xA0;</span><span class="punctuation section block begin cpp"><span>{</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="storage type c"><span>double</span></span><span>&#xA0;re,&#xA0;im;</span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="storage modifier cpp"><span>public:</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="meta function constructor cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="entity name function cpp"><span>complex</span></span><span class="punctuation definition parameters begin c"><span>(</span></span><span class="storage type c"><span>double</span></span><span>&#xA0;r,&#xA0;</span><span class="storage type c"><span>double</span></span><span>&#xA0;i</span><span class="punctuation definition parameters end c"><span>)</span></span></span><span>&#xA0;:re</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span>r</span><span class="punctuation section block end c"><span>}</span></span></span><span>,&#xA0;im</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span>i</span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;construct&#xA0;complex&#xA0;from&#xA0;two&#xA0;scalars</span><span>&#xA0;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="meta function constructor cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="entity name function cpp"><span>complex</span></span><span class="punctuation definition parameters begin c"><span>(</span></span><span class="storage type c"><span>double</span></span><span>&#xA0;r</span><span class="punctuation definition parameters end c"><span>)</span></span></span><span>&#xA0;:re</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span>r</span><span class="punctuation section block end c"><span>}</span></span></span><span>,&#xA0;im</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="constant numeric c"><span>0</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;construct&#xA0;complex&#xA0;from&#xA0;one&#xA0;scalar</span><span>&#xA0;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="meta function constructor cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="entity name function cpp"><span>complex</span></span><span class="punctuation definition parameters begin c"><span>(</span></span><span class="punctuation definition parameters end c"><span>)</span></span></span><span>&#xA0;:re</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="constant numeric c"><span>0</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>,&#xA0;im</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="constant numeric c"><span>0</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;default&#xA0;complex:&#xA0;{0,0}</span><span>&#xA0;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;...</span><span>&#xA0;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="punctuation section block end cpp"><span>}</span></span></span><span>;</span></span></div></pre>
+<p>We could deal with the repetitiveness by considering one of the constructors &#x201C;the real one&#x201D; and forward to that (&#xA7;17.4.3):</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex(double&#xA0;r,&#xA0;double&#xA0;i)&#xA0;:re{r},&#xA0;im{i}&#xA0;{}&#xA0;//&#xA0;construct&#xA0;complex&#xA0;from&#xA0;two&#xA0;scalars</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex(double&#xA0;r)&#xA0;:complex{2,0}&#xA0;{}&#xA0;//&#xA0;construct&#xA0;complex&#xA0;from&#xA0;one&#xA0;scalar</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex()&#xA0;:complex{0,0}&#xA0;{}&#xA0;//&#xA0;default&#xA0;complex:&#xA0;{0,0}</span></span></span></div></pre>
+<p>However, this can be abbreviated further:</p>
+<pre class="editor-colors lang-c++"><div class="line"><span class="source cpp"><span class="meta function c"><span class="entity name function c"><span>complex</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>double</span></span><span>&#xA0;r&#xA0;=</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>,&#xA0;</span><span class="storage type c"><span>double</span></span><span>&#xA0;i&#xA0;=</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>&#xA0;:re</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span>r</span><span class="punctuation section block end c"><span>}</span></span></span></span><span>,&#xA0;im</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span>i</span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span><span class="punctuation section block end c"><span>}</span></span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;construct&#xA0;complex&#xA0;from&#xA0;two&#xA0;scalars</span><span>&#xA0;</span></span></span></div></pre>
+<p>This makes it clear that if a user supplies fewer than the two arguments needed, the default is used.</p>
+<ol>
+<li>A default argument is type checked at the time of the function declaration and evaluated at the time of the call. (Default arguments that can change value are most often best avoided because they introduce subtle context dependencies.)</li>
+</ol>
+<pre class="editor-colors lang-c++"><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="storage type cpp"><span>class</span></span><span>&#xA0;</span><span class="entity name type cpp"><span>X</span></span><span>&#xA0;</span><span class="punctuation section block begin cpp"><span>{</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="storage modifier cpp"><span>public:</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="storage modifier c"><span>static</span></span><span>&#xA0;</span><span class="storage type c"><span>int</span></span><span>&#xA0;def_arg;</span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="storage type c"><span>void</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>f</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;=def_arg</span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="punctuation whitespace comment leading c++"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span></span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;...</span><span>&#xA0;</span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta class-struct-block cpp"><span class="punctuation section block end cpp"><span>}</span></span></span><span>;</span></span></div></pre>
+<ol start="2">
+<li>Default arguments may be provided for trailing arguments only.</li>
+</ol>
+<pre class="editor-colors lang-c++"><div class="line"><span class="source cpp"><span class="storage type c"><span>int</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>f</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>,&#xA0;</span><span class="storage type c"><span>int</span></span><span>&#xA0;=</span><span class="constant numeric c"><span>0</span></span><span>,&#xA0;</span><span class="storage type c"><span>char</span></span><span>*&#xA0;=</span><span class="variable language cpp"><span>nullptr</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;OK</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source cpp"><span class="storage type c"><span>int</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>g</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;=</span><span class="constant numeric c"><span>0</span></span><span>,&#xA0;</span><span class="storage type c"><span>int</span></span><span>&#xA0;=</span><span class="constant numeric c"><span>0</span></span><span>,&#xA0;</span><span class="storage type c"><span>char</span></span><span>*</span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;error</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source cpp"><span class="storage type c"><span>int</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>h</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;=</span><span class="constant numeric c"><span>0</span></span><span>,&#xA0;</span><span class="storage type c"><span>int</span></span><span>,&#xA0;</span><span class="storage type c"><span>char</span></span><span>*&#xA0;=</span><span class="variable language cpp"><span>nullptr</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;error</span><span>&#xA0;</span></span></span></div></pre>
+<ol start="3">
+<li>A default argument cannot be repeated or changed in a subsequent<br>
+declaration in the same scope.</li>
+</ol>
+<pre class="editor-colors lang-c++"><div class="line"><span class="source cpp"><span class="storage type c"><span>void</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>f</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;x&#xA0;=&#xA0;</span><span class="constant numeric c"><span>7</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span></span></div><div class="line"><span class="source cpp"><span class="storage type c"><span>void</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>f</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;=&#xA0;</span><span class="constant numeric c"><span>7</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;error:&#xA0;cannot&#xA0;repeat&#xA0;default&#xA0;argument</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source cpp"><span class="storage type c"><span>void</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>f</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="storage type c"><span>int</span></span><span>&#xA0;=&#xA0;</span><span class="constant numeric c"><span>8</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;error:&#xA0;different&#xA0;default&#xA0;arguments</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source cpp"><span class="storage type c"><span>void</span></span><span class="meta function c"><span class="punctuation whitespace function leading c"><span>&#xA0;</span></span><span class="entity name function c"><span>g</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span class="punctuation section parens end c"><span>)</span></span></span><span>&#xA0;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta function c"><span class="meta block c"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="storage type c"><span>void</span></span><span class="meta initialization c"><span>&#xA0;</span><span class="variable other c"><span>f</span></span><span class="punctuation definition parameters c"><span>(</span></span></span><span class="storage type c"><span>int</span></span><span>&#xA0;x&#xA0;=&#xA0;</span><span class="constant numeric c"><span>9</span></span><span>);&#xA0;</span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;OK:&#xA0;this&#xA0;declaration&#xA0;hides&#xA0;the&#xA0;outer&#xA0;one</span><span>&#xA0;</span></span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta function c"><span class="meta block c"><span class="punctuation whitespace comment leading c++"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span></span><span class="comment line double-slash c++"><span class="punctuation definition comment c++"><span>//</span></span><span>&#xA0;...</span><span>&#xA0;</span></span></span></span></span></div><div class="line"><span class="source cpp"><span class="meta function c"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></span></div></pre>
+
+        </article>
+        
+        
+            <div style="max-width: 854px; margin: 0 auto;">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="cpp.function" data-title="function of c++" data-url="yonggu.me/cpp/functions.html "></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yonggu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

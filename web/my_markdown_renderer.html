@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>My Markdown Render | YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">Web index</a></p>
+<h2>html</h2>
+<ul>
+<li><a href="./html_intro.html">introduction</a></li>
+</ul>
+<h2>css</h2>
+<h2>Javascript</h2>
+<ul>
+<li><a href="./js.html">Index</a></li>
+<li><a href="./js_basics.html">Basics</a></li>
+<li><a href="./js_closure.html">Closure</a></li>
+<li><a href="./js_object_oriented.html">Object oriented</a></li>
+<li><a href="./js_event_loop.html">Event loop</a></li>
+<li><a href="./js_promise.html">Promise</a></li>
+<li><a href="./js_others.html">Others</a></li>
+</ul>
+<h2>Node.js</h2>
+<ul>
+<li><a href="./node.html">Index</a></li>
+<li><a href="./node_basics.html">Basics</a></li>
+</ul>
+<h2>Markdown</h2>
+<ul>
+<li><a href="./md.html">Index</a></li>
+<li><a href="./md_cheatsheet.html">Myeditor cheatsheet</a></li>
+<li class="selected"><a href="./my_markdown_renderer.html">My markdown renderer</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists" target="_blank">Markdown cheatsheet (GFM)</a></li>
+</ul>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h1>My Markdown Render</h1>
+<ul>
+<li><a href="#remarkable-syntax-extensions">Remarkable Syntax extensions</a></li>
+<li><a href="#my-custom-extension">My Custom Extension</a>
+<ul>
+<li><a href="#1-task-list">1. task list</a></li>
+<li><a href="#2-mathjax">2. mathJax</a></li>
+<li><a href="#3-yaml">3. yaml</a></li>
+</ul></li>
+<li><a href="#remarkable-customizationa-namesection_3a">Remarkable customization</a>
+<ul>
+<li><a href="#1-how-does-remarkable-work">1. How does remarkable work ?</a>
+<ul>
+<li><a href="#the-parse-function">The <code>parse</code> function</a></li>
+<li><a href="#the-rendererrender-function">The <code>renderer.render</code> function</a></li>
+</ul></li>
+<li><a href="#2-how-to-customize-remarkable">2. How to customize remarkable ?</a>
+<ul>
+<li><a href="#use-config">Use config</a></li>
+<li><a href="#manage-rules">Manage rules</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Pages on this site are mainly written in Markdown language. Specificly, I use the package <a href="https://github.com/jonschlinkert/remarkable" target="_blank">remarkable</a>(v1.7.1) with custom extensions.</p>
+<h2>Remarkable Syntax extensions</h2>
+<p><strong>remarkable</strong> supports the <a href="http://commonmark.org" target="_blank">CommonMark spec</a> + syntax extensions + sugar (URL autolinking, typographer).</p>
+<p>Enabled by default:</p>
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#footnotes" target="_blank">Footnotes</a></li>
+<li><a href="https://help.github.com/articles/github-flavored-markdown/#tables" target="_blank">Tables</a> (GFM)</li>
+<li><a href="https://help.github.com/articles/github-flavored-markdown/#strikethrough" target="_blank">&lt;del&gt;</a><br>
+(GFM strikethrough) - <code>~~deleted text~~</code></li>
+</ul>
+<p>Disabled by default:</p>
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#superscripts-and-subscripts" target="_blank">&lt;sup&gt;</a> - <code>19^th^</code> 19<sup>th</sup></li>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#superscripts-and-subscripts" target="_blank">&lt;sub&gt;</a> - <code>H~2~O</code> H<sub>2</sub>O</li>
+<li><a href="https://michelf.ca/projects/php-markdown/extra/#abbr" target="_blank">abbreviations</a></li>
+<li><strong>&lt;ins&gt;</strong> - <code>++inserted text++</code> (experimental)</li>
+<li><strong>&lt;mark&gt;</strong> - <code>==marked text==</code> (experimental)</li>
+</ul>
+<h2>My Custom Extension</h2>
+<p>For how to customize <strong>remarkable</strong>, see <a href="#section_3">remarkable customization</a> section below.</p>
+<h3>1. task list</h3>
+<blockquote>
+<p>If a task list item description begins with a parenthesis, you&#x2019;ll need to escape it with \:</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> (Optional) Open a followup issue</li>
+</ul>
+</blockquote>
+<h3>2. mathJax</h3>
+<h3>3. yaml</h3>
+<ul>
+<li>draft: set true to prevent rendering</li>
+<li>sideNav: set to false to disable side navigation on current page</li>
+<li>title: My Markdown Render</li>
+<li>comment: set to true to enable commenting</li>
+<li>thread_id: used for duoshuo commenting</li>
+</ul>
+<h2>Remarkable customization<a name="section_3"></a></h2>
+<p><strong>remarkable</strong> can be customized. You can add new rules and even replace existing ones.</p>
+<h3>1. How does remarkable work ?</h3>
+<p>Provided following usage of <strong>remarkable</strong></p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;Remarkable&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>remarkable</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;defaults&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;html</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;Enable&#xA0;HTML&#xA0;tags&#xA0;in&#xA0;source</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;xhtmlOut</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="constant language boolean false js"><span>false</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;Use&#xA0;&apos;/&apos;&#xA0;to&#xA0;close&#xA0;single&#xA0;tags&#xA0;(&lt;br&#xA0;/&gt;)</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;breaks</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;Convert&#xA0;&apos;\n&apos;&#xA0;in&#xA0;paragraphs&#xA0;into&#xA0;&lt;br&gt;</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;langPrefix</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;CSS&#xA0;language&#xA0;prefix&#xA0;for&#xA0;fenced&#xA0;blocks</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;linkify</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;autoconvert&#xA0;URL-like&#xA0;texts&#xA0;to&#xA0;links</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;linkTarget</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;set&#xA0;target&#xA0;to&#xA0;open&#xA0;link&#xA0;in</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;typographer</span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;Enable&#xA0;smartypants&#xA0;and&#xA0;other&#xA0;sweet&#xA0;transforms</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;md&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>Remarkable</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span>full</span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;defaults</span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;html&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="variable other object js"><span>md</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>render</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>str</span><span class="meta delimiter object comma js"><span>,</span></span><span class="punctuation section scope begin js"><span>{</span></span><span class="punctuation section scope end js"><span>}</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<p><code>md.render(str,{})</code> works in two steps: <strong>parse</strong> and <strong>render</strong>.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>md.renderer.render(md.parse(str,{}));</span></span></span></div></pre>
+<h4>The <code>parse</code> function</h4>
+<p>The parse function is to parse the input <em>str</em> to <strong>an array of tokens</strong>, which are used to render html code in the <code>render</code> step. It uses a instance of StateCore <em>state</em> in the parse process. The instance <em>md</em> and <em>state</em> has mainly following members and methods:<br>
+<img src="/assets/remarkable_customization_1-2.png" alt="remarkable_customization_1-2"></p>
+<p>The parse function uses <strong>parser_core</strong>, which applies each rule in <strong>rules_core</strong> to <em>state</em>. Among these core rules, the &#x2018;block&#x2019; rule scan through <em>str</em> to generate all block tokens (including nested block tokens) and the others scan these tokens to generate inline tokens, which are placed in block tokens&#x2019; children property.</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="variable other object js"><span>md</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>parse</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>str</span><span class="meta delimiter object comma js"><span>,</span></span><span>env</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;state&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>StateCore</span></span></span><span class="meta brace round js"><span>(</span></span><span>md</span><span class="meta delimiter object comma js"><span>,</span></span><span>str</span><span class="meta delimiter object comma js"><span>,</span></span><span>env</span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="variable other object js"><span>rules_core</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>block</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>state</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>abbr</span></span><span class="meta brace round js"><span>(</span></span><span>state</span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>references</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>state</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword operator spread js"><span>...</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>linkify</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>state</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;</span><span class="variable other object js"><span>state</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>tokens</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<p>Specificly, the &#x2018;block&#x2019; rule uses <strong>parser_block</strong> to generate block tokens, while the other rules use <strong>parser_inline</strong> to generate inline level tokens.<br>
+The &#x2018;block&#x2019; rule works mainly as follows.</p>
+<ul>
+<li>It scans through <em>str</em> line by line in order.</li>
+<li>For each currently scaned line, it tries every possible rule in  <strong>rules_block</strong> to identify which kind of block it is.</li>
+<li>Each block rule generates its corresponding tokens.</li>
+</ul>
+<p>Each other rule work as follows:</p>
+<ul>
+<li>It identifies special block level tokens.</li>
+<li>For identified tokens, it tries every possible rule in <strong>rules_inline</strong> to identify which kinkd of inline it is.</li>
+<li>Each inline rule generates its corresponding tokens.</li>
+</ul>
+<h4>The <code>renderer.render</code> function</h4>
+<p>The <code>render</code> function is easy: it just translate each token into html code one by one in order.<br>
+Specifically, it distinguish inline-type tokens from others. The inline-type tokens can just be considered as nested tokens. All tokens are maped to html code by <strong>rules</strong>.<br>
+Below are the source code of <code>render</code> function:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="variable other object js"><span>Renderer</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span class="meta function js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>renderInline</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>tokens</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>options</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>env</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;_rules&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>rules</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;len&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="variable other object js"><span>tokens</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>length</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;i&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>0</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;result&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>while</span></span><span>&#xA0;</span><span class="meta brace round js"><span>(</span></span><span>len</span><span class="keyword operator decrement js"><span>--</span></span><span class="meta brace round js"><span>)</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;result&#xA0;</span><span class="keyword operator assignment compound js"><span>+=</span></span><span>&#xA0;_rules</span><span class="meta brace square js"><span>[</span></span><span>tokens</span><span class="meta brace square js"><span>[</span></span><span>i</span><span class="meta brace square js"><span>]</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>type</span></span><span class="meta brace square js"><span>]</span></span><span class="meta brace round js"><span>(</span></span><span>tokens</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;i</span><span class="keyword operator increment js"><span>++</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;options</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;env</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;result</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>Renderer</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span class="meta function js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>render</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>tokens</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>options</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>env</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;_rules&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>rules</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;len&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="variable other object js"><span>tokens</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>length</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;i&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="keyword operator js"><span>-</span></span><span class="constant numeric decimal js"><span>1</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;result&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>while</span></span><span>&#xA0;</span><span class="meta brace round js"><span>(</span></span><span class="keyword operator increment js"><span>++</span></span><span>i&#xA0;</span><span class="keyword operator comparison js"><span>&lt;</span></span><span>&#xA0;len</span><span class="meta brace round js"><span>)</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword control js"><span>if</span></span><span>&#xA0;</span><span class="meta brace round js"><span>(</span></span><span>tokens</span><span class="meta brace square js"><span>[</span></span><span>i</span><span class="meta brace square js"><span>]</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>type</span></span><span>&#xA0;</span><span class="keyword operator comparison js"><span>===</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span>inline</span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="meta brace round js"><span>)</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;result&#xA0;</span><span class="keyword operator assignment compound js"><span>+=</span></span><span>&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>renderInline</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>tokens</span><span class="meta brace square js"><span>[</span></span><span>i</span><span class="meta brace square js"><span>]</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>children</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;options</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;env</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta brace curly js"><span>}</span></span><span>&#xA0;</span><span class="keyword control js"><span>else</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;result&#xA0;</span><span class="keyword operator assignment compound js"><span>+=</span></span><span>&#xA0;_rules</span><span class="meta brace square js"><span>[</span></span><span>tokens</span><span class="meta brace square js"><span>[</span></span><span>i</span><span class="meta brace square js"><span>]</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>type</span></span><span class="meta brace square js"><span>]</span></span><span class="meta brace round js"><span>(</span></span><span>tokens</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;i</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;options</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;env</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;result</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<h3>2. How to customize remarkable ?</h3>
+<h4>Use config</h4>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;md&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>Remarkable</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span>full</span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;defaults</span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+<p>When instance <em>md</em> is created, we used a preset &apos;full&#x2019;, which contains a set of configurations. We can change it to &#x2018;default&#x2019; and &apos;commonmark&#x2019;. Also, we can use the defaults variable.<br>
+Besides, we can use <code>md.use()</code> and <code>md.set()</code> to do configuration.</p>
+<h4>Manage rules</h4>
+<p>From above, we can see that <code>md.block</code>, <code>md.inline</code>, <code>md.block</code>, <code>md.renderer</code> play important roles in parsing and rendering. Specificlly, those rules used by them play important roles. To customize <strong>remarkable</strong>, we can customize these rules. There are four kinds of rules.</p>
+<ul>
+<li>md.core.ruler</li>
+<li>md.block.ruler</li>
+<li>md.inline.ruler</li>
+<li>md.renderer.rules</li>
+</ul>
+<p>The first three kind of rules are order sensetive. They all use the <em>ruler</em> object. Rulers provide four main methods to manage their rules:</p>
+<ul>
+<li>before(beforeName, ruleName, fn, options): inserts a new rule before the rule beforeName.</li>
+<li>after(afterName, ruleName, fn, options): inserts a new rule after the rule afterName.</li>
+<li>push(ruleName, fn, options): inserts a new rule at the end of the rule list.</li>
+<li>at(ruleName, fn, options): replace the rule ruleName with a new rule.</li>
+</ul>
+<p>The <code>renderer.rules</code> are just a list of token-function pairs. We can modify or add rules simply by accessing <code>render.rules.[token-name]</code>.</p>
+
+        </article>
+        
+        
+            <div style="max-width: 854px; margin: 0 auto;">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="web.md.my_markdown_render" data-title="My Markdown Render" data-url="yonggu.me/web/my_markdown_renderer.html "></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yonggu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">c++ index</a></p>
+<h2>Basics</h2>
+<ul>
+<li class="selected"><a href="./building-Process-of-Cpp.html">Building Process of C++</a></li>
+<li><a href="./functions.html">Functions</a></li>
+<li><a href="./initialization.html">Initialization</a></li>
+</ul>
+<h2>Classes</h2>
+<h2>Templastes</h2>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h1>Building Process</h1>
+<ul>
+<li><a href="#phases-of-translation">Phases Of  Translation</a></li>
+<li><a href="#other-notes">Other notes</a>
+<ul>
+<li><a href="#1-preprocessor">1. Preprocessor</a>
+<ul>
+<li><a href="#directives">Directives</a></li>
+<li><a href="#capabilities">Capabilities</a></li>
+</ul></li>
+<li><a href="#2-linkage">2. Linkage</a></li>
+</ul></li>
+</ul>
+<p>Generally, there are several output (not intermediate) targets to be built. The order in which they are built is specified manually. E.g. specified in target dependencies in Xcode, in makefile for linux, etc.</p>
+<p>For each target, sources files (.c, .cpp) are translated to translation units in the order specified as above. (May be the order doesn&#x2019;t make difference because there exists no dependencies)</p>
+<p>For details on xcode, refer to <a href="https://www.objc.io/issues/6-build-tools/build-process/#build-settings" target="_blank">The Build Process</a><br>
+For makefile, refer to:<br>
+<a href="http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/" target="_blank">A Simple Makefile Tutorial</a><br>
+<a href="https://www.gnu.org/software/make/manual/make.html" target="_blank">GNU make</a></p>
+<h2>Phases Of  Translation</h2>
+<ul>
+<li>A translation unit is the combination of a source files, included headers and source files less any source lines skipped by conditional inclusion preprocessor directive.</li>
+<li>The standard defines 9 phases in the translation. The first four correspond to preprocessing, the next three are the compilation (including assembly), the next one is the instantiation of templates (producing instantiation units) and the last one is the linking.</li>
+<li>In practice the eighth phase (the instantiation of templates) is often done during the compilation process but some compilers delay it to the linking phase and some spread it in the two.</li>
+</ul>
+<p>For detail, refer to: <a href="http://en.cppreference.com/w/cpp/language/translation_phases" target="_blank">http://en.cppreference.com/w/cpp/language/translation_phases</a></p>
+<p>For clang, refer to <a href="https://www.objc.io/issues/6-build-tools/mach-o-executables/" target="_blank">Mach-O Executables</a> (including details on sections in memory)</p>
+<h2>Other notes</h2>
+<h3>1. Preprocessor</h3>
+<p>The preprocessor is executed at translation phase 4, before the compilation. The result of preprocessing is a single file which is then passed to the actual compiler.</p>
+<h4>Directives</h4>
+<p>The preprocessing directives control the behavior of the preprocessor. Each directive occupies one line and has the following format:</p>
+<ul>
+<li># character</li>
+<li>preprocessing instruction (one of define, undef, include, if, ifdef, ifndef, else, elif, endif, line, error, pragma) <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li>
+<li>arguments (depends on the instruction)</li>
+<li>line break</li>
+</ul>
+<p>The null directive (# followed by a line break) is allowed and has no effect.</p>
+<h4>Capabilities</h4>
+<p>The preprocessor has the source file translation capabilities:<br>
+conditionally compile of parts of source file (controlled by directive #if, #ifdef, #ifndef, #else, #elif and #endif).<br>
+replace text macros while possibly concatenating or quoting identifiers (controlled by directives #define and #undef, and operators # and ##)<br>
+include other files (controlled by directive #include and checked with __has_include (since C++17 ))<br>
+cause an error (controlled by directive #error)<br>
+The following aspects of the preprocessor can be controlled:<br>
+implementation defined behavior (controlled by directive #pragma and operator _Pragma (since C++11))<br>
+file name and line information available to the preprocessor (controlled by directives #line)</p>
+<h3>2. Linkage</h3>
+<p>Linkage of entity (variable, function, class, type ,template, namespace, etc.) decides whether it can be seen in other places (other translation units, other scopes of the same translation unit).<br>
+There are there kinds of linkage: no linkage, internal linkage, external linkage.<br>
+<a href="http://www.goldsborough.me/c/c++/linker/2016/03/30/19-34-25-internal_and_external_linkage_in_c++/" target="_blank">Internal and External Linkage in C++ ( by Peter Goldsborough )</a></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>These are the directives defined by the standard. The standard does not define behavior for other directives: they might be ignored, have some useful meaning, or cause a compile-time error. Even if otherwise ignored, they are removed from the source code when the preprocessor is done. A common non-standard extension is the directive #warning which emits a user-defined message during compilation. <a href="#fnref1" class="footnote-backref">&#x21A9;</a></p>
+</li>
+</ol>
+</section>
+
+        </article>
+        
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

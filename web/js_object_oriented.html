@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Object oriented | YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">Web index</a></p>
+<h2>html</h2>
+<ul>
+<li><a href="./html_intro.html">introduction</a></li>
+</ul>
+<h2>css</h2>
+<h2>Javascript</h2>
+<ul>
+<li><a href="./js.html">Index</a></li>
+<li><a href="./js_basics.html">Basics</a></li>
+<li><a href="./js_closure.html">Closure</a></li>
+<li class="selected"><a href="./js_object_oriented.html">Object oriented</a></li>
+<li><a href="./js_event_loop.html">Event loop</a></li>
+<li><a href="./js_promise.html">Promise</a></li>
+<li><a href="./js_others.html">Others</a></li>
+</ul>
+<h2>Node.js</h2>
+<ul>
+<li><a href="./node.html">Index</a></li>
+<li><a href="./node_basics.html">Basics</a></li>
+</ul>
+<h2>Markdown</h2>
+<ul>
+<li><a href="./md.html">Index</a></li>
+<li><a href="./md_cheatsheet.html">Myeditor cheatsheet</a></li>
+<li><a href="./my_markdown_renderer.html">My markdown renderer</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists" target="_blank">Markdown cheatsheet (GFM)</a></li>
+</ul>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h1>Object oriented</h1>
+<h2>Object</h2>
+<p>Every variable can be used as a object, except for <strong>undefined</strong> and <strong>null</strong> . Even number literal has its dot operation if the dot is not parsed as float point.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>2.toString();&#xA0;//&#xA0;SyntaxError</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>2..toString();&#xA0;//&#xA0;valid</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>2&#xA0;.toString();&#xA0;//&#xA0;valid</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>(2).toString();&#xA0;//valid</span></span></span></div></pre>
+<p>However, javascript distinguish <strong>object</strong> data types (including function object and array object) from primary data types (Number, String, &#x2026;)</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;a&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>3</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>a</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>invalid,&#xA0;a.x&#xA0;is&#xA0;undifiend</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;b&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta brace square js"><span>[</span></span><span class="constant numeric decimal js"><span>3</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="meta brace square js"><span>]</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>b</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>valid</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>foo</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>foo</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>valid</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;c&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="punctuation section scope begin js"><span>{</span></span><span class="punctuation section scope end js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>c</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>valid</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;s&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>&quot;</span></span><span>str</span><span class="punctuation definition string end js"><span>&quot;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>s</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>invalid</span><span>&#xA0;</span></span></span></div></pre>
+<p><strong>object</strong> can be used as hash tables. A property can be accessed in two ways: dot operation and [] operation. They are equivalent, except that [] operation can be used in following two cases while dot operation can&#x2019;t:</p>
+<ul>
+<li>set property dynamiclly</li>
+<li>property name is a not valid variable name</li>
+</ul>
+<p>Objects created using {} are inherited form Object.prototype. A property can only be deleted using <code>delete</code> operation</p>
+<h2>Usage of this</h2>
+<p><em>this</em> can only be used inside of function, it always refers to the caller of this function.</p>
+<p><em>this</em> may refers to <em>global</em></p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;x&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>1</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>test</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#x3000;&#x3000;</span><span class="meta function-call js"><span class="entity name function js"><span>alert</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="entity name function js"><span>test</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;1</span><span>&#xA0;</span></span></span></div></pre>
+<p><em>this</em> in constructor function</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;x&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>test</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#x3000;&#x3000;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>1</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;o&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>test</span></span></span><span class="meta brace round js"><span>(</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="entity name function js"><span>alert</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>x</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>2&#x3000;&#x3000;</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="entity name function js"><span>alert</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="variable other object js"><span>o</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>1</span><span>&#xA0;</span></span></span></div></pre>
+<p><em>this</em> in bound function: apply, call</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;x&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>0</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>test</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#x3000;&#x3000;</span><span class="meta function-call js"><span class="entity name function js"><span>alert</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;o&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="punctuation section scope begin js"><span>{</span></span><span class="punctuation section scope end js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>o</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>x</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="constant numeric decimal js"><span>1</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>o</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>m</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;test</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>o</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>m</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>apply</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>0</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>o</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other object property js"><span>m</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>apply</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>o</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>1</span><span>&#xA0;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div></pre>
+<h2>Prototypal inheritance</h2>
+<p>We distinguish <em>__proto__</em> from <em>prototype</em></p>
+<p>Every object (include function object) has an implicit <em>__proto__</em> property. It is this property that implements prototype chain.</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>getProperty</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>obj</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>prop</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>if</span></span><span>&#xA0;</span><span class="meta brace round js"><span>(</span></span><span class="variable other object js"><span>obj</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>hasOwnProperty</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>prop</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;obj</span><span class="meta brace square js"><span>[</span></span><span>prop</span><span class="meta brace square js"><span>]</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>else</span></span><span>&#xA0;</span><span class="keyword control js"><span>if</span></span><span>&#xA0;</span><span class="meta brace round js"><span>(</span></span><span class="variable other object js"><span>obj</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>__proto__</span></span><span>&#xA0;</span><span class="keyword operator comparison js"><span>!==</span></span><span>&#xA0;</span><span class="constant language null js"><span>null</span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;</span><span class="meta function-call js"><span class="entity name function js"><span>getProperty</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="variable other object js"><span>obj</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>__proto__</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;prop</span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>else</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;</span><span class="constant language js"><span>undefined</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div></pre>
+<blockquote>
+<p>Note: The <code>in</code>, <code>for in</code> operations will search upward the prototype chain, use <code>hasOwnProperty</code> as filter if needed.</p>
+</blockquote>
+<p>Every constructor function has a property <em>prototype</em>, which is an empty object by default. If variable <em>x</em> is constructed (using <strong>new</strong>) by function <em>F</em>, then <code>x.__proto__ === F.prototype</code><br>
+Here is how <strong>new</strong> works:</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>New</span></span><span>&#xA0;</span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>F</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="storage type var js"><span>var</span></span><span>&#xA0;n&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>{</span></span><span>&#xA0;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&apos;</span></span><span>__proto__</span><span class="punctuation definition string end js"><span>&apos;</span></span></span><span class="keyword operator js"><span>:</span></span><span>&#xA0;</span><span class="variable other object js"><span>f</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span>&#xA0;</span><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;</span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="constant other object js"><span>F</span></span><span class="meta method-call js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>apply</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span>n</span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable language js"><span>arguments</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;n</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div></pre>
+<p><img src="/assets/js-object_oriented_1.png" alt="js-object_oriented_1"></p>
+<ol start="3">
+<li><p><code>x = new f()</code> doesn&#x2019;t implement &quot;x inherits another object&quot;. However, Douglas Crockford found a way to exploit the new operator to do real Prototypal Inheritance!</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="support class js"><span>Object</span></span><span class="meta function js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>create</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>parent</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>F</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="constant other object js"><span>F</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;parent</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="keyword control js"><span>return</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>F</span></span></span><span class="meta brace round js"><span>(</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre>
+</li>
+<li><p>Instance object (object that is not function) don&#x2019;t have <em>prototype</em> (undefined). This <em>prototype</em> has a <em>constructor</em> property. Whenever a constructor&#x2019;s <em>prototype</em> is manually modified, its constructor should be maintained properly. ( to ensure the correctness of operations like <code>this.constructor.prototype.constructor.prototype</code> and <code>instance of</code>)</p>
+<pre class="editor-colors lang-js"><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>Animal</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span><span>&#x3000;&#x3000;&#x3000;&#x3000;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>species</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>&quot;</span></span><span>&#x52A8;&#x7269;</span><span class="punctuation definition string end js"><span>&quot;</span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#x3000;&#x3000;</span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&#xA0;</span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&#xA0;</span><span class="entity name function js"><span>Cat</span></span><span class="meta parameters js"><span class="punctuation definition parameters begin bracket round js"><span>(</span></span><span class="variable parameter function js"><span>name</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&#xA0;</span><span class="variable parameter function js"><span>color</span></span><span class="punctuation definition parameters end bracket round js"><span>)</span></span></span></span><span>&#xA0;</span><span class="punctuation definition function body begin bracket curly js"><span>{</span></span><span>&#x3000;&#x3000;&#x3000;&#x3000;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>name</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;name</span><span class="punctuation terminator statement js"><span>;</span></span><span>&#x3000;&#x3000;&#x3000;&#x3000;</span></span></div><div class="line"><span class="source js"><span>&#xA0;&#xA0;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant dom js"><span>color</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;color</span><span class="punctuation terminator statement js"><span>;</span></span><span>&#x3000;&#x3000;</span></span></div><div class="line"><span class="source js"><span class="punctuation definition function body end bracket curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>Cat</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>Animal</span></span></span><span class="meta brace round js"><span>(</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>Cat</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>prototype</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="support constant js"><span>constructor</span></span><span>&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;Cat</span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="storage type var js"><span>var</span></span><span>&#xA0;cat1&#xA0;</span><span class="keyword operator assignment js"><span>=</span></span><span>&#xA0;</span><span class="meta class instance constructor"><span class="keyword operator new js"><span>new</span></span><span>&#xA0;</span><span class="entity name type instance js"><span>Cat</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>&quot;</span></span><span>&#x5927;&#x6BDB;</span><span class="punctuation definition string end js"><span>&quot;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>&quot;</span></span><span>&#x9EC4;&#x8272;</span><span class="punctuation definition string end js"><span>&quot;</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="entity name function js"><span>alert</span></span><span class="meta arguments js"><span class="punctuation definition arguments begin bracket round js"><span>(</span></span><span class="variable other object js"><span>cat1</span></span><span class="meta delimiter property period js"><span>.</span></span><span class="variable other property js"><span>species</span></span><span class="punctuation definition arguments end bracket round js"><span>)</span></span></span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&#xA0;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&#xA0;&#x52A8;&#x7269;</span><span>&#xA0;</span></span></span></div></pre>
+<p>The code above implement that &quot;Cat inherit Animal&quot;, which is actually &quot;cat1 inherits new Animal()&quot;</p>
+<blockquote>
+<ul>
+<li>Not standard: <em>__proto__</em> is non-standard and even deprecated. Also native Object.create and Douglas Crockford implementation are not exactly equivalent.</li>
+<li>Not optimized: Object.create (native or custom) has not yet been as heavily optimized as the new construction. It can be up to 10 times slower.</li>
+</ul>
+</blockquote></li>
+<li><p>class inheritance<br>
+The class keyword is introduced in ES6, but is syntactical sugar, JavaScript remains prototype-based</p></li>
+</ol>
+<p>References:<br>
+<a href="http://blog.vjeux.com/2011/javascript/how-prototypal-inheritance-really-works.html" target="_blank">Javascript &#x2013; How Prototypal Inheritance really works</a> (by vjeux)<br>
+<a href="http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000" target="_blank">&#x539F;&#x578B;&#x7EE7;&#x627F;</a> (by &#x5ED6;&#x96EA;&#x5CF0;)<br>
+<a href="http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html" target="_blank">Javascript&#x7EE7;&#x627F;&#x673A;&#x5236;&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;</a> (by &#x962E;&#x4E00;&#x950B;)<br>
+<a href="http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html" target="_blank">Javascript&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#xFF08;&#x4E8C;&#xFF09;&#xFF1A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x7EE7;&#x627F;</a> (by &#x962E;&#x4E00;&#x950B;)<br>
+<a href="http://javascript.info/tutorial/inheritance" target="_blank">Prototypal inheritance</a></p>
+
+        </article>
+        
+        
+            <div style="max-width: 854px; margin: 0 auto;">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="web.js.object_oriented" data-title="Object oriented" data-url="yonggu.me/web/js_object_oriented.html "></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yonggu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+</div>
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

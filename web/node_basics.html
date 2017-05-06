@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">Web index</a></p>
+<h2>html</h2>
+<ul>
+<li><a href="./html_intro.html">introduction</a></li>
+</ul>
+<h2>css</h2>
+<h2>Javascript</h2>
+<ul>
+<li><a href="./js.html">Index</a></li>
+<li><a href="./js_basics.html">Basics</a></li>
+<li><a href="./js_closure.html">Closure</a></li>
+<li><a href="./js_object_oriented.html">Object oriented</a></li>
+<li><a href="./js_event_loop.html">Event loop</a></li>
+<li><a href="./js_promise.html">Promise</a></li>
+<li><a href="./js_others.html">Others</a></li>
+</ul>
+<h2>Node.js</h2>
+<ul>
+<li><a href="./node.html">Index</a></li>
+<li class="selected"><a href="./node_basics.html">Basics</a></li>
+</ul>
+<h2>Markdown</h2>
+<ul>
+<li><a href="./md.html">Index</a></li>
+<li><a href="./md_cheatsheet.html">Myeditor cheatsheet</a></li>
+<li><a href="./my_markdown_renderer.html">My markdown renderer</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists" target="_blank">Markdown cheatsheet (GFM)</a></li>
+</ul>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h2>Module</h2>
+<h3>How does <code>require()</code> work ?</h3>
+<p><a href="http://www.ruanyifeng.com/blog/2015/05/require.html" target="_blank">require() &#x6E90;&#x7801;&#x89E3;&#x8BFB; by &#x962E;&#x4E00;&#x950B;</a><br>
+<a href="https://nodejs.org/api/modules.html#modules_modules" target="_blank">nodejs official reference about module</a></p>
+<ol>
+<li>Require statements are executed sychronously. That is, all the statements in the required module are executed before continuing execute statements after the require statement.</li>
+<li>Required modules are cached. They can be viewed as single instance.</li>
+</ol>
+<h3>Basic modules</h3>
+<p>fs<br>
+stream<br>
+https<br>
+path</p>
+<h3>Other common modules</h3>
+<p><a href="https://github.com/cheeriojs/cheerio" target="_blank">cheerio</a>: for jquery<br>
+<a href="http://underscorejs.org" target="_blank">underscore</a>: for underscore<br>
+<a href="http://bluebirdjs.com/docs/getting-started.html" target="_blank">bluebird</a>: for Promise</p>
+<h2>Npm</h2>
+<h3>Install</h3>
+<p><code>npm install</code> installs all dependent packages (and those dependent on these packages, and&#x2026;) specified in package.json.<br>
+<code>npm install &lt;package&gt;</code> installs &apos;package&#x2019;.</p>
+<p>options:</p>
+<ul>
+<li>-g : install globally  (default locally in <code>./node_modules/</code>)</li>
+<li>&#x2013;save: save to <code>package.json</code> as dependency</li>
+<li>&#x2013;save-dev: save to <code>package.json</code> as dependencyDev</li>
+</ul>
+<h3>Others</h3>
+<p>create a symlink on mac</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>ln&#xA0;-s&#xA0;/path/to/origin&#xA0;/path/to/link</span></span></span></div></pre>
+
+        </article>
+        
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

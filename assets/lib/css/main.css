@@ -1,0 +1,145 @@
+.markdown-preview-enhanced {
+    margin-top: 0;
+}
+
+.markdown-preview-enhanced[data-use-github-style] code {
+    background-color: rgb(247,247,247);
+}
+
+@media screen and(max-width:600px) {
+    .markdown-preview-enhanced {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif
+}
+
+.w3-navbar li a {
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.w3-navbar li a.active {
+    background-color: #4caf50;
+}
+
+
+.w3-navbar li a:hover {
+    color: white;
+    background-color: black;
+}
+.w3-navbar li a.fix-hover:hover {
+    color: white;
+    background-color: #4f4f4f;
+}
+
+ul.w3-navbar {
+    color: #f1f1f1;
+    background-color: #5f5f5f;
+}
+
+#dropMenu {
+    margin-top: 51px;
+    background-color: #5f5f5f;
+    color: #f1f1f1;
+}
+
+#mySidenav {
+    margin-top: 51px;
+    padding: 0;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+#mySidenav a{
+    padding: 2px 12px;
+    margin: 0;
+    color: #40a977;
+    text-decoration: none;
+}
+#mySidenav a:hover{
+    text-decoration: underline !important;
+    background-color: #fff;
+}
+#mySidenav li.selected a:hover{
+    background-color: #eee;
+}
+
+#mySidenav li.selected {
+    background: #eee;
+}
+
+#mySidenav h1,
+#mySidenav h2,
+#mySidenav h5,
+#mySidenav h6 {
+    margin: 0;
+    padding: 0 6px;
+}
+
+#mySidenav h1 {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 4px 0;
+    padding: 2px 8px;
+}
+
+#mySidenav h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 4px 0;
+    padding: 2px 8px;
+}
+
+#mySidenav ul {
+    list-style-type: none;
+    padding: 2px 8px;
+}
+
+#mySidenav ol {
+    list-style-type: none;
+    padding: 2px 8px;
+}
+
+
+footer {
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #4caf50;
+}
+
+.w3-main {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+article {
+    /*    min-height: calc(100vh - 52px);*/
+/*    overflow: auto;*/
+}
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+  left: 250px;
+}

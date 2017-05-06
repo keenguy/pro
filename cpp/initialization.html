@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">c++ index</a></p>
+<h2>Basics</h2>
+<ul>
+<li><a href="./building-Process-of-Cpp.html">Building Process of C++</a></li>
+<li><a href="./functions.html">Functions</a></li>
+<li class="selected"><a href="./initialization.html">Initialization</a></li>
+</ul>
+<h2>Classes</h2>
+<h2>Templastes</h2>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h1>1. Initialization</h1>
+<p>For each declarator, the initializer may be one of the following:</p>
+<ul>
+<li>( <em>expression-list</em> )<br>
+comma-separated list of arbitrary expressions and braced-init-lists in parentheses</li>
+<li>= <em>expression</em></li>
+<li>{ <em>Initializer-list</em> }<br>
+braced-init-list: possibly empty, comma-separated list of expressions and other braced-init-lists</li>
+</ul>
+<p>Depending on context, the initializer may invoke one of the following:</p>
+<ul>
+<li>Value-initialization, e.g. <code>std:string s{};</code></li>
+<li>Direct-initialization, e.g. <code>std:string s(&quot;hello&quot;);</code></li>
+<li>Copy-initialization, e.g. <code>std:string s = &quot;hello&quot;</code></li>
+<li>List-initialization, e.g. <code>std:string s{&apos;a&apos;,&apos;b&apos;,&apos;c&apos;}</code></li>
+<li>Aggregate-initialization, e.g. <code>char a[3] = {&apos;a&apos;,&apos;b&apos;}</code></li>
+<li>Reference-initialization, e.g. <code>char &amp;c = a[0]</code>;</li>
+</ul>
+<p>If no initializer is provided, the rules of default initialization apply.<br>
+constant initialization</p>
+<h3>Non-local variables</h3>
+<ul>
+<li>Static initialization: constant/zero initialization</li>
+<li>Dynamic initialization</li>
+</ul>
+<h3>Static local variables</h3>
+<h2>1.1 One Initializer</h2>
+<p>If an initializer is specified for an object, that initializer determines the initial value of an object. An initializer can use one of four syntactic styles:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>X&#xA0;a1&#xA0;{v};&#xA0;&#xA0;&#xA0;//&#xA0;{}&#xA0;initialization&#xA0;(since&#xA0;c++11)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>X&#xA0;a2&#xA0;=&#xA0;{v};</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>X&#xA0;a3&#xA0;=&#xA0;v;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>X&#xA0;a4(v);&#xA0;&#xA0;//&#xA0;invoke&#xA0;constructor&#xA0;explictly</span></span></span></div></pre>
+<p>Of these, only the first can be used in every context, and I strongly recommend its use. The two forms using = are what you use in C. Old habits die hard, so I sometimes (inconsistently) use = when initializing a simple variable with a simple value.</p>
+<p>However, anything much more complicated than that is better done using {}. Initialization using {}, list initialization, does not allow narrowing (&#xA7;iso.8.5.4). That is:</p>
+<ul>
+<li>An integer cannot be converted to another integer that cannot hold its value. For example, char to int is allowed, but not int to char.</li>
+<li>A floating-point value cannot be converted to another floating- point type that cannot hold its value. For example, float to double is allowed, but not double to float.</li>
+<li>A floating-point value cannot be converted to an integer type.</li>
+<li>An integer value cannot be converted to a floating-point type.<br>
+There is no advantage to using {} initialization, and one trap, when using auto to get the type determined by the initializer. The trap is that if the initializer is a {}-list, we may not want its type deduced (&#xA7;6.3.6.2). For example:</li>
+</ul>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>auto&#xA0;z1&#xA0;{99};&#xA0;//&#xA0;z1&#xA0;is&#xA0;an&#xA0;initializer_list&lt;int&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>auto&#xA0;z2&#xA0;=&#xA0;99;&#xA0;//&#xA0;z2&#xA0;is&#xA0;an&#xA0;int</span></span></span></div></pre>
+<p>So prefer = when using auto.</p>
+<p>The empty initializer list, {}, is used to indicate that a default value is desired. For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;x4&#xA0;{};&#xA0;&#xA0;//&#xA0;x4&#xA0;becomes&#xA0;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>double&#xA0;d4&#xA0;{};&#xA0;&#xA0;//&#xA0;d4&#xA0;becomes&#xA0;0.0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char*&#xA0;p&#xA0;{};&#xA0;&#xA0;//&#xA0;p&#xA0;becomes&#xA0;nullptr</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>vector&lt;int&gt;&#xA0;v4{};&#xA0;//&#xA0;v4&#xA0;becomes&#xA0;the&#xA0;empty&#xA0;vector</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>string&#xA0;s4&#xA0;{};&#xA0;//&#xA0;s4&#xA0;becomes&#xA0;&quot;&quot;</span></span></span></div></pre>
+<p>Most types have a default value. For integral types, the default value is a suitable representation of zero. For pointers, the default value is nullptr (&#xA7;7.2.2). For user-defined types, the default value (if any) is determined by the type&#x2019;s constructors (&#xA7;17.3.3).</p>
+<p>For user-defined types, there can be a distinction between direct initialization (where implicit conversions are allowed) and copy initialization (where they are not); see &#xA7;16.2.6.</p>
+<p>Initialization of particular kinds of objects is discussed where appropriate:</p>
+<ul>
+<li>Pointers: &#xA7;7.2.2, &#xA7;7.3.2, &#xA7;7.4</li>
+<li>References: &#xA7;7.7.1 (lvalues), &#xA7;7.7.2 (rvalues) &#x2022; Arrays: &#xA7;7.3.1, &#xA7;7.3.2</li>
+<li>Constants: &#xA7;10.4</li>
+<li>Classes: &#xA7;17.3.1 (not using constructors), &#xA7;17.3.2 (using constructors), &#xA7;17.3.3 (default), &#xA7;17.4 (member and base), &#xA7;17.5 (copy and move)</li>
+<li>User-defined containers: &#xA7;17.3.4</li>
+</ul>
+<h2>1.2 Missing Initializers</h2>
+<p>For many types, including all built-in types, it is possible to leave out the initializer. If you do that &#x2013; and that has unfortunately been common &#x2013; the situation is more complicated. If you don&#x2019;t like the complications, just initialize consistently. The only really good case for an uninitialized variable is a large input buffer.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>constexpr&#xA0;int&#xA0;max&#xA0;=&#xA0;1024*1024;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char&#xA0;buf[max];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>some_stream.get(buf,max);&#xA0;//&#xA0;read&#xA0;at&#xA0;most&#xA0;max&#xA0;characters&#xA0;into&#xA0;buf</span></span></span></div></pre>
+<p>We could easily have initialized buf:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char&#xA0;buf[max]&#xA0;{};&#xA0;//&#xA0;initialize&#xA0;every&#xA0;char&#xA0;to&#xA0;0</span></span></span></div></pre>
+<p>By redundantly initializing, we would have suffered a performance hit which just might have been significant. Avoid such low-level use of buffers where you can, and don&#x2019;t leave such buffers uninitialized unless you know (e.g., from measurement) that the optimization compared to using an initialized array is significant.</p>
+<p>If no initializer is specified, a global (&#xA7;6.3.4), namespace (&#xA7;14.3.1), local static (&#xA7;12.1.8), or static member (&#xA7;16.2.12) (collectively called static objects) is initialized to {} of the appropriate type. For example:</p>
+<p>Local variables and objects created on the free store (sometimes called dynamic objects or heap objects; &#xA7;11.2) are not initialized by default unless they are of user-defined types with a default constructor (&#xA7;17.3.3). For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;a;&#xA0;//&#xA0;global,&#xA0;means&#xA0;&quot;int&#xA0;a{};&quot;&#xA0;so&#xA0;that&#xA0;a&#xA0;becomes&#xA0;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>void&#xA0;f()&#xA0;{</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>static&#xA0;int&#xA0;b;&#xA0;//&#xA0;local&#xA0;static,&#xA0;means&#xA0;&quot;static&#xA0;int&#xA0;b{};&quot;&#xA0;so&#xA0;that&#xA0;b&#xA0;becomes&#xA0;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;x;&#xA0;//&#xA0;x&#xA0;does&#xA0;not&#xA0;have&#xA0;a&#xA0;well-defined&#xA0;value</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char&#xA0;buf[1024];&#xA0;&#xA0;//&#xA0;buf[i]&#xA0;does&#xA0;not&#xA0;have&#xA0;a&#xA0;well-defined&#xA0;value</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int*&#xA0;p&#xA0;{new&#xA0;int};&#xA0;//&#xA0;*p&#xA0;does&#xA0;not&#xA0;have&#xA0;a&#xA0;well-defined&#xA0;value</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char*&#xA0;q&#xA0;{new&#xA0;char[1024]};&#xA0;//&#xA0;q[i]&#xA0;does&#xA0;not&#xA0;have&#xA0;a&#xA0;well-defined&#xA0;value</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>string&#xA0;s;&#xA0;//&#xA0;s==&quot;&quot;&#xA0;because&#xA0;of&#xA0;string&apos;s&#xA0;default&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>vector&lt;char&gt;&#xA0;v;&#xA0;//&#xA0;v=={}&#xA0;because&#xA0;of&#xA0;vector&apos;s&#xA0;default&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>string*&#xA0;ps&#xA0;{new&#xA0;string};&#xA0;//&#xA0;*ps&#xA0;is&#xA0;&quot;&quot;&#xA0;because&#xA0;of&#xA0;string&apos;s&#xA0;default&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&#xA0;...&#xA0;}</span></span></span></div></pre>
+<h2>1.3 Initializer Lists</h2>
+<p>More complicated objects can require more than one value as an initializer. This is primarily handled by initializer lists delimited by { and }. For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;a[]&#xA0;=&#xA0;{&#xA0;1,&#xA0;2&#xA0;};&#xA0;//&#xA0;array&#xA0;initializer</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>struct&#xA0;S&#xA0;{&#xA0;int&#xA0;x,&#xA0;string&#xA0;s&#xA0;};</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>S&#xA0;s&#xA0;=&#xA0;{&#xA0;1,&#xA0;&quot;Helios&quot;&#xA0;};&#xA0;&#xA0;//&#xA0;struct&#xA0;initializer</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;z&#xA0;=&#xA0;{&#xA0;0,&#xA0;pi&#xA0;};&#xA0;//&#xA0;use&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>vector&lt;double&gt;&#xA0;v&#xA0;=&#xA0;{&#xA0;0.0,&#xA0;1.1,&#xA0;2.2,&#xA0;3.3&#xA0;};&#xA0;//&#xA0;use&#xA0;list&#xA0;constructor</span></span></span></div></pre>
+<p>In the cases above, the = is redundant. However, some prefer to add it to emphasize that a set of values are used to initialize a set of member variables.</p>
+<p>In some cases, function-style argument lists can also be used (&#xA7;2.3, &#xA7;16.2.5). For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;z(0,pi);&#xA0;//&#xA0;use&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>vector&lt;double&gt;&#xA0;v(10,3.3);&#xA0;//&#xA0;use&#xA0;constructor:&#xA0;v&#xA0;gets&#xA0;10&#xA0;elements&#xA0;initialized&#xA0;to&#xA0;3.3</span></span></span></div></pre>
+<p>In a declaration, an empty pair of parentheses, (), always means &#x201C;function&#x201D; (&#xA7;12.1). So, if you want to be explicit about &#x201C;use default initialization&#x201D; you need {}. For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;z1(1,2);&#xA0;//&#xA0;function-style&#xA0;initializer&#xA0;(initialization&#xA0;by&#xA0;constructor)</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;f1();&#xA0;//function&#xA0;declaration</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;z2&#xA0;{1,2};&#xA0;//&#xA0;initialization&#xA0;by&#xA0;constructor&#xA0;to&#xA0;{1,2}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>complex&lt;double&gt;&#xA0;f2&#xA0;{};&#xA0;//initialization&#xA0;by&#xA0;constructor&#xA0;to&#xA0;the&#xA0;default&#xA0;value&#xA0;{0,0}</span></span></span></div></pre>
+<p>Note that initialization using the {} notation does not narrow (&#xA7;6.3.5). When using auto, a {}-list has its type deduced to<br>
+std::initializer_list<t>.</t></p>
+<h4>{}-lists</h4>
+<p>A {}-list is used to construct an object of some type, so the number of elements and their types must be what is required to construct an object of that type.</p>
+<p>In addition to their use for initializing named variables (&#xA7;6.3.5.2), {}-lists can be used as expressions in many (but not all) places. They can appear in two forms:<br>
+[1] Qualified by a type, T{&#x2026;}, meaning &#x201C;create an object of type T initialized by T{&#x2026;}&#x201D;; &#xA7;11.3.2<br>
+[2] Unqualified {&#x2026;}, for which the the type must be determined from the context of use; &#xA7;11.3.3</p>
+<h1>2. Class Object Initialization</h1>
+<p>Problems:</p>
+<ul>
+<li>copy initialization vs. copy constructors vs. copy assignment</li>
+</ul>
+<h2>2.1 Initialization Without (used-declared) Constructors</h2>
+<p>We cannot define a constructor for a built-in type, yet we can initialize it with a value of suitable type. For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;a&#xA0;{1};</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>char*&#xA0;p&#xA0;{nullptr};</span></span></span></div></pre>
+<p>Similarly, we can initialize objects of a class for which we have not defined a constructor using</p>
+<ul>
+<li>memberwise initialization,</li>
+<li>copy initialization, or</li>
+<li>default initialization (without an initializer or with an empty initializer list).</li>
+</ul>
+<p>For example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>struct&#xA0;Work&#xA0;{</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>string&#xA0;author;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>string&#xA0;name;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>int&#xA0;year;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>};</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Work&#xA0;s9&#xA0;{&#xA0;&quot;Beethoven&quot;,</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&quot;Symphony&#xA0;No.&#xA0;9&#xA0;in&#xA0;D&#xA0;minor,&#xA0;Op.&#xA0;125;&#xA0;Choral&quot;,</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>1824&#xA0;};&#xA0;//&#xA0;memberwise&#xA0;initialization</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Work&#xA0;currently_playing&#xA0;{&#xA0;s9&#xA0;};&#xA0;//&#xA0;copy&#xA0;initialization</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Work&#xA0;none&#xA0;{};&#xA0;//&#xA0;default&#xA0;initialization</span></span></span></div></pre>
+<p>For default initialization:</p>
+<ul>
+<li>The default initialization of using {} is defined as initialization of each member by {}.</li>
+<li>Where no constructor requiring arguments is declared, it is also possible to leave out the initializer completely.(This needs complier provided default constructor ?) For example:
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Work&#xA0;alpha;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>void&#xA0;f()&#xA0;{</span></span></span></div><div class="line"><span class="text plain"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta paragraph text"><span>Work&#xA0;beta;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;...</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre>
+For statically allocated objects (&#xA7;6.4.2), the rules are exactly as if you had used {}, so the value of alpha is {&quot;&quot;,&quot;&quot;,0}. However, for local variables and free-store objects, the default initialization is done only for members of class type, and members of built-in type are left uninitialized, so the value of beta is {&quot;&quot;,&quot;&quot;,unknown}.<br>
+The reason for this complication is to improve performance in rare critical cases.</li>
+</ul>
+<p>Naturally, memberwise initialization works only if we can access the members.</p>
+<h2>2.2 Initialization Using Constructors</h2>
+<p>When a class has a constructor, all objects of that class will be initialized by a constructor call. If the constructor requires arguments, these arguments must be supplied:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;today&#xA0;=&#xA0;Date(23,6,1983);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;xmas(25,12,1990);&#xA0;//&#xA0;abbreviated&#xA0;form</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;my_birthday;&#xA0;//&#xA0;error:&#xA0;initializer&#xA0;missing</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;release1_0(10,12);&#xA0;//&#xA0;error:&#xA0;third&#xA0;argument&#xA0;missing</span></span></span></div></pre>
+<p>When a class has no user-defined constructor, a default constructor is provided by compiler.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>class&#xA0;X&#xA0;{</span></span></span></div><div class="line"><span class="text plain"><span>&#xA0;&#xA0;&#xA0;&#xA0;</span><span class="meta paragraph text"><span>X(Sometype);&#xA0;//&#xA0;&quot;ordinary&#xA0;constructor&quot;:&#xA0;create&#xA0;an&#xA0;object</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;X();&#xA0;//&#xA0;default&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;X(const&#xA0;X&amp;);&#xA0;//&#xA0;copy&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;X(X&amp;&amp;);&#xA0;&#xA0;//&#xA0;move&#xA0;constructor</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;X&amp;&#xA0;operator=(const&#xA0;X&amp;);&#xA0;//&#xA0;copy&#xA0;assignment:&#xA0;clean&#xA0;up&#xA0;target&#xA0;and&#xA0;copy</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;X&amp;&#xA0;operator=(X&amp;&amp;);&#xA0;//&#xA0;move&#xA0;assignment:&#xA0;clean&#xA0;up&#xA0;target&#xA0;and&#xA0;move</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;~X();&#xA0;//&#xA0;destructor:&#xA0;clean&#xA0;up</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&#xA0;&#xA0;&#xA0;&#xA0;//&#xA0;...</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>};</span></span></span></div></pre>
+<p>Except for the &#x201C;ordinary constructor,&#x201D; these special member functions can be generated by the compiler; see &#xA7;17.6.</p>
+<p>Since a constructor defines initialization for a class, we can use the {}-initializer notation:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;today&#xA0;=&#xA0;Date&#xA0;{23,6,1983};</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;xmas&#xA0;{25,12,1990};&#xA0;//&#xA0;abbreviated&#xA0;form</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Date&#xA0;release1_0&#xA0;{10,12};&#xA0;//&#xA0;error:&#xA0;third&#xA0;argument&#xA0;missing</span></span></span></div></pre>
+<p>I recommend the {} notation over the () notation for initialization because it is explicit about what is being done (initialization), avoids some potential mistakes, and can be used consistently (&#xA7;2.2.2, &#xA7;6.3.5). There are cases where () notation must be used (&#xA7;4.4.1, &#xA7;17.3.2.1), but they are rare.</p>
+<p>An initialization with an = is considered a copy initialization. In principle, a copy of the initializer is placed into the initialized object. However, such a copy may be optimized away (elided), and a move operation (&#xA7;3.3.2, &#xA7;17.5.2) may be used if the initializer is an rvalue (&#xA7;6.4.1). Leaving out the = makes the initialization explicit. Explicit initialization is known as direct initialization.</p>
+<p>The distinction between direct and copy initialization is maintained for list initialization (&#xA7;17.3.4.3).</p>
+
+        </article>
+        
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>

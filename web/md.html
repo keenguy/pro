@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Markdown | YongGu</title>
+     <meta name="Description" content="c++,javascript,markdown,wrpt"> 
+   <meta name="description" content="YongGu&#39;s Personal notes."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Icon -->
+<!--
+  <link rel="apple-touch-icon" sizes="57x57" href="/_assets/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/_assets/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/_assets/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/_assets/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/_assets/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/_assets/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/_assets/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/_assets/icon/apple-touch-icon-152x152.png">
+-->
+
+<!--
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/_assets/icon/favicon-160x160.png" sizes="160x160">
+-->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-32x32.png" sizes="32x32">
+    
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+
+  <link rel="stylesheet" href="/assets/lib/css/w3.css">
+  <link rel="stylesheet" href="/assets/lib/css/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="/assets/lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/lib/css/markdown.css">
+    
+  <link rel="stylesheet" href="/assets/lib/css/main.css">
+  <link rel="stylesheet" href="/assets/lib/mermaid/mermaid.css">
+  <link rel="stylesheet" href="/assets/lib/highlight/styles/atom-one-light.css">
+    
+  <script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+<header>
+    <ul class="w3-navbar w3-top w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="fix-hover" href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        
+            <li class="w3-opennav w3-hide-large">
+                <a class="w3-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        
+
+        <li class="w3-opennav"><a href="/index.html"><i class="fa fa-home"></i></a></li>
+        
+        <li class="w3-hide-small"><a href="/cpp/index.html">C++</a></li>
+        <li class="w3-hide-small"><a href="/web/index.html">Web</a></li>
+        <li class="w3-hide-small"><a href="/git/index.html">Git</a></li>
+        <li class="w3-hide-small"><a href="/about.html">About</a></li>
+        <li class="w3-opennav"><a href="https://github.com/keenguy/keenguy.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+
+    </ul>
+    <div id="dropMenu" class="w3-top w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large">
+            <li><a href="/cpp/index.html" class="w3-hover-white">C++</a></li>
+            <li><a href="/web/index.html" class="w3-hover-white">Web</a></li>
+            <li><a href="/git/index.html" class="w3-hover-white">Git</a></li>
+            <li><a href="/about.html" class="w3-hover-white">About</a></li>
+        </ul>
+    </div>
+</header>
+
+    
+    
+    
+        <!-- Sidenav -->
+     <nav class="w3-sidenav w3-collapse w3-slim w3-animate-left" style="z-index:5;width:250px;margin-top:51px;height:calc(100% - 51px);padding-bottom: 20px;" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a> 
+    <p><a href="./index.html">Web index</a></p>
+<h2>html</h2>
+<ul>
+<li><a href="./html_intro.html">introduction</a></li>
+</ul>
+<h2>css</h2>
+<h2>Javascript</h2>
+<ul>
+<li><a href="./js.html">Index</a></li>
+<li><a href="./js_basics.html">Basics</a></li>
+<li><a href="./js_closure.html">Closure</a></li>
+<li><a href="./js_object_oriented.html">Object oriented</a></li>
+<li><a href="./js_event_loop.html">Event loop</a></li>
+<li><a href="./js_promise.html">Promise</a></li>
+<li><a href="./js_others.html">Others</a></li>
+</ul>
+<h2>Node.js</h2>
+<ul>
+<li><a href="./node.html">Index</a></li>
+<li><a href="./node_basics.html">Basics</a></li>
+</ul>
+<h2>Markdown</h2>
+<ul>
+<li class="selected"><a href="./md.html">Index</a></li>
+<li><a href="./md_cheatsheet.html">Myeditor cheatsheet</a></li>
+<li><a href="./my_markdown_renderer.html">My markdown renderer</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists" target="_blank">Markdown cheatsheet (GFM)</a></li>
+</ul>
+
+    </nav>
+   
+    <!-- Overlay effect when opening sidenav on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer;z-index:4;" title="close side menu" id="myOverlay">
+        
+    </div>
+    
+    
+    <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+    <div class="w3-main" style="min-height:100vh; margin-left:250px; ">
+        <article class="markdown-preview-enhanced w3-padding-64 w3-container" data-use-github-style data-use-github-syntax-theme>
+        
+        <h2>1. Introduction</h2>
+<p>Markdown is a plain text format for writing structured documents.</p>
+<blockquote>
+<p>The overriding design goal for Markdown&#x2019;s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it&#x2019;s been marked up with tags or formatting instructions.</p>
+</blockquote>
+<p>John Gruber&#x2019;s <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">canonical description of Markdown&#x2019;s syntax</a> does not specify the syntax unambiguously. A group of fans of Markdown propose a standard unambiguous syntax specification for Markdown: the <a href="http://commonmark.org" target="_blank">CommonMark</a> sepc.</p>
+<h2>2. Prlimilaries of CommonMark</h2>
+<p>Below are some important points, for detail refer to <a href="http://spec.commonmark.org/" target="_blank">http://spec.commonmark.org/</a></p>
+<h3>Blocks and inlines</h3>
+<ul>
+<li><p>We can think of a document as a sequence of <strong>blocks</strong>&#x2014;structural elements like paragraphs, block quotations, lists, headings, rules, and code blocks. Some blocks (like block quotes and list items) contain other blocks; others (like headings and paragraphs) contain <strong>inline</strong> content&#x2014;text, links, emphasized text, images, code, and so on.</p></li>
+<li><p>Indicators of block structure always take precedence over indicators of inline structure. So, for example, the following is a list with two items, not a list with one item containing a code span:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&#xA0;`one</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&#xA0;two`</span></span></span></div></pre>
+<p>produces</p>
+<ul>
+<li>`one</li>
+<li>two`</li>
+</ul></li>
+<li><p>Blocks can be divided into two types: <strong>container blocks</strong> and <strong>leaf blocks</strong>.<br>
+Leaf blocks includes:</p>
+<ul>
+<li>Thematic breaks</li>
+<li>ATX headings and setext headings</li>
+<li>Indented code blocks and Fenced code blocks</li>
+<li>Html blocks</li>
+<li>Link reference definitions</li>
+<li>Paragraphs</li>
+<li>Blank lines</li>
+</ul>
+<p>Container blocks includes:</p>
+<ul>
+<li>Block quotes</li>
+<li>List items</li>
+<li>Lists</li>
+</ul></li>
+<li><p>Inlines are parsed sequentially from the beginning of the character stream to the end (left to right, in left-to-right languages). It includes:</p>
+<ul>
+<li>Backslash escapes</li>
+<li>Entity and numeric character references</li>
+<li>Code spans: Code span backticks have higher precedence than any other inline constructs except HTML tags and autolinks.</li>
+<li>Emphasis and strong emphasis</li>
+<li>Links (inline links vs. reference links)</li>
+<li>Images</li>
+<li>Autolinks</li>
+<li>Raw HTML</li>
+<li>Hard line breaks (line break preceded by two or more spaces)</li>
+<li>Soft line breaks (regular line break)</li>
+<li>Textual content</li>
+</ul></li>
+</ul>
+<h3>Parsing strategy</h3>
+<p>Parsing has two phases:</p>
+<ul>
+<li><p>In the first phase, lines of input are consumed and the block structure of the document&#x2014;its division into paragraphs, block quotes, list items, and so on&#x2014;is constructed. Text is assigned to these blocks but not parsed. Link reference definitions are parsed and a map of links is constructed.</p></li>
+<li><p>In the second phase, the raw text contents of paragraphs and headings are parsed into sequences of Markdown inline elements (strings, code spans, links, emphasis, and so on), using the map of link references constructed in phase 1.</p></li>
+</ul>
+<p>At each point in processing, the document is represented as a tree of blocks. The root of the tree is a document block. The document may have any number of other blocks as children. These children may, in turn, have other blocks as children.</p>
+<p>In phase 1, the last child of a block is normally considered open, meaning that subsequent lines of input can alter its contents. (Blocks that are not open are closed.) Once all of the input has been parsed, all open blocks are closed. Then in phase 2, We &#x201C;walk the tree,&#x201D; visiting every node, and parse raw string contents of paragraphs and headings as inlines.</p>
+<h2>Github flavored Markdown</h2>
+<p><a href="https://help.github.com/categories/writing-on-github/" target="_blank">GFM info page</a><br>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">GFM cheatsheet</a><br>
+Below are some features not included in CommonMark spec.</p>
+<ol>
+<li><p>Strikethrough uses two tildes. <del>Scratch this.</del></p></li>
+<li><p>Syntax highlighting (only support fenced code blocks)</p></li>
+<li><p>Tables</p></li>
+<li><p>Task list</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked disabled> Finish my changes</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> Push my commits to GitHub</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> Open a pull request</li>
+</ul>
+<p>If a task list item description begins with a parenthesis, you&#x2019;ll need to escape it with :</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled> (Optional) Open a followup issue</li>
+</ul></li>
+</ol>
+<h2>Remarkable</h2>
+<p>Refer to <a href="https://github.com/jonschlinkert/remarkable" target="_blank">remarkable on github</a> for details.<br>
+Supports the CommonMark spec + syntax extensions + sugar (URL autolinking, typographer).</p>
+<h3>Syntax extensions</h3>
+<p>Enabled by default:</p>
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#footnotes" target="_blank">Footnotes</a></li>
+<li><a href="https://help.github.com/articles/github-flavored-markdown/#tables" target="_blank">Tables</a> (GFM)</li>
+<li><a href="https://help.github.com/articles/github-flavored-markdown/#strikethrough" target="_blank">&lt;del&gt;</a><br>
+(GFM strikethrough) - <code>~~deleted text~~</code></li>
+</ul>
+<p>Disabled by default:</p>
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#superscripts-and-subscripts" target="_blank">&lt;sup&gt;</a> - <code>19^th^</code> 19<sup>th</sup></li>
+<li><a href="http://johnmacfarlane.net/pandoc/README.html#superscripts-and-subscripts" target="_blank">&lt;sub&gt;</a> - <code>H~2~O</code> H<sub>2</sub>O</li>
+<li><a href="https://michelf.ca/projects/php-markdown/extra/#abbr" target="_blank">abbreviations</a></li>
+<li><strong>&lt;ins&gt;</strong> - <code>++inserted text++</code> (experimental)</li>
+<li><strong>&lt;mark&gt;</strong> - <code>==marked text==</code> (experimental)</li>
+</ul>
+<p><strong>HEADS UP!</strong>: Experimental extensions can be changed later for something like <a href="http://criticmarkup.com/" target="_blank">Critic Markup</a>, but you will still be able to use old-style rules via external plugins if you prefer.</p>
+<h2>Markdown-preview-enhanced</h2>
+<p>Refer to <a href="https://atom.io/packages/markdown-preview-enhanced" target="_blank">Markdown Preview Enhanced</a> for details.<br>
+This atom plugin uses <strong>remarkable</strong> to render markdown. Here is how it works:</p>
+<ul>
+<li><a href="https://github.com/jonschlinkert/remarkable" target="_blank">remarkable</a> to convert markdown to html.</li>
+<li><a href="https://github.com/Khan/KaTeX" target="_blank">KaTeX</a> or <a href="https://github.com/mathjax/MathJax" target="_blank">MathJax</a> to render math expressions. (<a href="https://github.com/Khan/KaTeX/wiki/Function-Support-in-KaTeX" target="_blank">KaTeX Supported functions/symbols</a>)
+<ul>
+<li>expression within <code>$...$</code> will be rendered normally.</li>
+<li>expression within <code>$$...$$</code> will be rendered in displayMode.</li>
+<li>if you want to enable math highlighting, try <a href="https://atom.io/packages/language-gfm-enhanced" target="_blank">language-gfm-enhanced</a> package.</li>
+<li>You can choose your math rendering method from <a href="#settings-panel">settings panel</a>.<br>
+<strong>MathJax</strong> supports more symbols, but it has slower rendering speed compared to <strong>KaTeX</strong>.</li>
+<li><img src="https://cloud.githubusercontent.com/assets/1908863/14398210/0e408954-fda8-11e5-9eb4-562d7c0ca431.gif" target="_blank"></li>
+</ul></li>
+<li><a href="https://github.com/knsv/mermaid" target="_blank">mermaid</a> to render flowchart and sequence diagram.
+<ul>
+<li>code block within <code>{mermaid}</code> notation will be rendered by <a href="https://github.com/knsv/mermaid" target="_blank">mermaid</a></li>
+<li>check <a href="http://knsv.github.io/mermaid/#flowcharts-basic-syntax" target="_blank">mermaid doc</a> for more information about how to create flowchart and sequence diagram</li>
+<li><img src="http://i.imgur.com/rwIPIA8.gif" alt="mermaid" target="_blank"></li>
+</ul></li>
+<li><a href="http://plantuml.com/" target="_blank">PlantUML</a> to create multiple kinds of graph. (<strong>Java</strong> is required)
+<ul>
+<li>You can install <a href="http://www.graphviz.org/" target="_blank">Graphviz</a> (not required) to generate all diagram types.</li>
+<li>code block within <code>{puml}</code> or <code>{plantuml}</code> notation will be rendered by <a href="http://plantuml.com/" target="_blank">PlantUML</a>.</li>
+</ul></li>
+<li><a href="http://wavedrom.com/" target="_blank">WaveDrom</a> to create digital timing diagram.
+<ul>
+<li>code block within <code>{wavedrom}</code> notation will be rendered by <a href="https://github.com/drom/wavedrom" target="_blank">wavedrom</a>.</li>
+</ul></li>
+<li><a href="https://github.com/mdaines/viz.js" target="_blank">Viz.js</a> to render <a href="https://en.wikipedia.org/wiki/DOT_(graph_description_language)" target="_blank">dot language</a> graph.
+<ul>
+<li>code block within <code>{viz}</code> notation will be rendered by <a href="https://github.com/mdaines/viz.js" target="_blank">Viz.js</a>.</li>
+<li>add <code>engine:[engine_name]</code> in the first line of code block with <code>{viz}</code> to choose different render engine</li>
+</ul></li>
+<li><a href="https://github.com/hakimel/reveal.js" target="_blank">reveal.js</a> to render beautiful presentations.
+<ul>
+<li><a href="https://rawgit.com/shd101wyy/markdown-preview-enhanced/master/docs/presentation-intro.html" target="_blank">Click here</a> to see the introduction.<br>
+In addition, it fetaures:</li>
+</ul></li>
+</ul>
+<ul>
+<li>toc generation</li>
+<li>Task list (GFM)</li>
+<li>Front matter</li>
+</ul>
+
+        </article>
+        
+        
+    </div>
+    
+    
+    <script>
+    var scrollTop;
+    function lockBody() {
+//            var top = $('.w3-main').scrollTop;
+            console.log(scrollTop);
+            $('.w3-main').css({
+                top: -(scrollTop)
+            });
+//            $('.w3-main').scrollTo(0,scrollTop);
+//            $('.w3-main').offset({top: -(scrollTop)});
+    }
+
+    function unlockBody() {
+        window.scrollTo(0, scrollTop);
+        window.setTimeout(function() {
+            scrollTop = null;
+        }, 0);
+    }
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+            $('.w3-main').removeClass('noscroll');
+            unlockBody();
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+            var top = $('.w3-main').offset().top;
+            scrollTop = window.pageYOffset;
+            $('.w3-main').addClass('noscroll');
+            lockBody(top);
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        // Get the Sidenav
+        var mySidenav = document.getElementById("mySidenav");
+        if (!mySidenav) {
+            return;
+        }
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+        $('.w3-main').removeClass('noscroll');
+        unlockBody();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("dropMenu");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    $(function() {
+        var menu = location.pathname.split("/")[1];
+        if (menu.length > 0 && menu != 'index.html') {
+            $('.w3-navbar a[href^="/' + menu + '"]').addClass('active');
+        }
+    });
+
+</script>
+
+<script src="/assets/lib/scripts/jquery-3.1.1.min.js"></script>
+<!--<script src="/assets/lib/highlight/highlight.pack.js"></script>-->
+<!--<script>hljs.initHighlightingOnLoad();</script>-->
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ messageStyle: 'none', tex2jax: {inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]], processEscapes: true} }); </script>
+<script type="text/javascript" async src="/assets/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+<script src="/assets/lib/mermaid/mermaid.min.js"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true
+    });
+
+</script>
+<!--
+<link rel="stylesheet" href="/highlight/styles/default.css">
+<script src="/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+</body>
+</html>
